@@ -1,5 +1,39 @@
 import "./hero.css";
 import Speech from "./Speech.jsx";
+import { motion } from "motion/react";
+
+const awardVariants = {
+  initial: {
+    x: -100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const followVariants = {
+  initial: {
+    y: -100,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+
+
 
 const Hero = () => {
   return (
@@ -7,26 +41,42 @@ const Hero = () => {
 
       <div className="hSection left">
         {/* TITLE */}
-        <h1 className="hTitle">
+        <motion.h1
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="hTitle">
           Hey There,
           <br />
           <span>I&apos;m Victor!</span>
-        </h1>
+        </motion.h1>
 
         {/* AWARDS */}
-        <div className="awards">
-          <h2>Top Rated Designer</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-          <div className="awardList">
-            <img src="/award1.png" alt="" />
-            <img src="/award2.png" alt="" />
-            <img src="/award3.png" alt="" />
-          </div>
-        </div>
+        <motion.div
+          variants={awardVariants}
+          initial="initial"
+          animate="animate"
+
+
+          className="awards">
+          <motion.h2 variants={awardVariants}     >Top Rated Designer</motion.h2>
+          <motion.p variants={awardVariants}  >Lorem ipsum, dolor sit amet consectetur adipisicing elit. </motion.p>
+          <motion.div variants={awardVariants} className="awardList">
+            <motion.img variants={awardVariants} src="/award1.png" alt="" />
+            <motion.img variants={awardVariants} src="/award2.png" alt="" />
+            <motion.img variants={awardVariants} src="/award3.png" alt="" />
+          </motion.div>
+        </motion.div>
 
         {/* SCROLL SVG */}
 
-        <a href="#services" className="scroll">
+        <motion.a animate={{ y: [0, 5], opacity: [0, 1, 0], }}
+          transition={{
+            repeat: Infinity,
+            duration: 4,
+            ease: "easeInOut"
+          }}
+          href="#services" className="scroll">
           <svg
             width="50px"
             height="50px"
@@ -39,7 +89,13 @@ const Hero = () => {
               stroke="white"
               strokeWidth="1"
             />
-            <path
+            <motion.path
+              animate={{ y: [0, 5] }}
+              transition={{
+                repeat: Infinity,
+                duration: 4,
+                ease: "easeInOut"
+              }}
 
               d="M12 5V8"
               stroke="white"
@@ -47,40 +103,57 @@ const Hero = () => {
               strokeLinecap="round"
             />
           </svg>
-        </a>
+        </motion.a>
       </div>
 
 
       <div className="hSection right">
 
         {/* FOLLOW */}
-        <div className="follow">
-          <a href="https://github.com/Bitxogm" target="_blank">
-            <img src="../../../public/icons8-github-100.png"></img>
-          </a>
-          <a href="https://app.netlify.com/teams/victorgm1976/projects" target="_blank">
-            <img src="../../../public/icons8-netlify-72.png"></img>
-          </a>
-          <a href="https://www.linkedin.com/in/victor-gonzalez-198810345/" target="_blank">
-            <img src="../../../public/icons8-linkedin-100.png"></img>
-          </a>
-          <div className="followTextContainer">
-            <div className="followText">FOLLOW ME</div>
-          </div>
-        </div>
+        <motion.div variants={followVariants} initial="initial" animate="animate" className="follow">
+          <motion.a href="https://github.com/Bitxogm" target="_blank">
+            <img src="/icons8-github-100.png"></img>
+          </motion.a>
+          <motion.a variants={followVariants} initial="initial" animate="animate" href="https://app.netlify.com/teams/victorgm1976/projects" target="_blank">
+            <img src="/icons8-netlify-72.png"></img>
+          </motion.a>
+          <motion.a variants={followVariants} initial="initial" animate="animate" href="https://www.linkedin.com/in/victor-gonzalez-198810345/" target="_blank">
+            <img src="/icons8-linkedin-100.png"></img>
+          </motion.a>
+          <motion.div className="followTextContainer">
+            <motion.div variants={followVariants} initial="initial" animate="animate"  className="followText">FOLLOW ME</motion.div>
+          </motion.div>
+        </motion.div>
 
         {/* BUBBLE */}
         < Speech />
         {/*  CERTIFICATES*/}
-        <div className="certificate">
+        <motion.div
+        animate={{opacity: [0, 1]}}
+        transition={{ duration: 1}}
+
+        
+        
+        className="certificate">
           <img src="/certificate.png"></img>
-          BITXO PRACTICE
+          BITXO JUNIOR
           <br />
           DEVELOPER
           <br />
           FULL-STACK
-          <a href="/#contact" className="contactLink">
-            <div className="contactButton">
+          <motion.a href="/#contact" className="contactLink" animate={{
+            x: [200,0],
+            opacity: [0, 1],
+          }}
+            transition={{
+              duration : 2,
+            }}
+          >
+            <motion.div className="contactButton" animate= {{rotate: [0, 360]}} transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "linear",
+            }}   >
               <svg viewBox="0 0 200 200" width="150" height="150">
                 <circle cx="100" cy="100" r="90" fill="pink" />
                 <path
@@ -114,10 +187,20 @@ const Hero = () => {
 
               </div>
 
-            </div>
-          </a>
+            </motion.div>
+          </motion.a>
+        </motion.div>
+      </div>
+
+      <div className="bg">
+        {/* 3d-shape */}
+
+        <div className="hImg">
+          {/* <img src="/Perfil.png" alt="Perfil"></img> */}
+          <img src="/obamita2_preview_rev_1.png" alt="Obama"></img>
         </div>
       </div>
+
     </div>
   )
 }

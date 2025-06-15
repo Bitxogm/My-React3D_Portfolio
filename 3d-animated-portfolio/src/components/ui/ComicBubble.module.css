@@ -1,0 +1,42 @@
+.bubble {
+  width: 300px;
+  height: 200px;
+  animation:
+    popIn 1s ease-out 0.4s forwards,
+    float 2.8s ease-in-out infinite 1s;
+  transform-origin: bottom left;
+}
+
+
+
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) rotate(-6deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+
+
+
+.bubblePath {
+  fill: #ffffffee;
+  stroke: black;
+  stroke-width: 4;
+}
+
+

@@ -1,0 +1,25 @@
+.speechContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.speechImageWrapper {
+  margin-top: 0.5rem;
+  margin-right: auto;
+}
+
+.speechImage {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  filter: saturate(1.1) contrast(1.05);
+  transition: transform 0.3s ease;
+}
+
+.speechImage:hover {
+  transform: scale(1.03) rotate(-1deg);
+}
