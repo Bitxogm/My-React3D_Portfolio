@@ -12,7 +12,7 @@ const Speech = () => {
           sequence={[
             'Hola, soy Víctor 👋',
             1000,
-            'Frontend developer & creativo 💡',
+            'Full Stack developer & creativo 💡',
             1500,
             '¿Trabajamos juntos? 🎯',
             2000,
