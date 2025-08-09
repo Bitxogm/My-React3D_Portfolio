@@ -23,3 +23,35 @@
 .speechImage:hover {
   transform: scale(1.03) rotate(-1deg);
 }
+
+@media(max-width:853px) {
+ .speechContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.speechImage {
+  display: none;
+}
+
+
+
+}
+
+@media (min-width:2500px){
+  .speechContainer{
+    height: 50%;
+  }
+
+  .speechImage {
+  width: 8rem;
+  border-radius: 50%;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  filter: saturate(1.1) contrast(1.05);
+  transition: transform 0.3s ease;
+}
+}

@@ -26,8 +26,8 @@ a {
 
 .container {
   max-width: 1536px;
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px; */
+  /* padding-right: 16px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -66,4 +66,23 @@ section {
   .container {
     max-width: 1536px;
   }
+}
+
+@media (min-width:2500px) {
+  .container{
+    max-width: 2500px;
+    height: 100vh;
+  }
+
+  .awards{
+    height: 70%;
+  }
+
+
+
+  .follow>img{
+   width: 80px;
+  }
+
+
 }

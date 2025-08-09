@@ -1,7 +1,6 @@
 
 import Globe from "./Globe.jsx";
 import "./hero.css";
-import MatrixRain from "./MatrixRain.jsx";
 import Shape from "./Shape.jsx";
 import Speech from "./Speech.jsx";
 import { motion } from "motion/react";
@@ -44,16 +43,16 @@ const Hero = () => {
     <>
       <div className="hero">
     
-           *
-        {/* <div className="shape-layer">
+           
+          {/* <div className="shape-layer">
         <Shape />
-        </div>
-           */}
+        </div>  */}
+           
      
-     
-          <div className="globe-lawyer">
-        <Globe />
-          </div>
+    
+           <div className="globe-lawyer">
+        <Globe/>
+          </div>  
 
 
 
@@ -120,24 +119,26 @@ const Hero = () => {
 
             {/* Primera fila: 4 iconos */}
             <motion.div className="awardList techRow" variants={awardVariants}>
-              <motion.img className="awardIcon" src="/html5.png" alt="HTML5" />
-              <motion.img className="awardIcon" src="/css3.png" alt="CSS3" />
-              <motion.img className="awardIcon" src="/python.png" alt="Python" />
+              <motion.img className="awardIcon" src="/react_original.png" alt="React" />
               <motion.img className="awardIcon" src="/JS.png" alt="JavaScript" />
+              <motion.img className="awardIcon" src="/TS.png" alt="TypeScript" />
+              <motion.img className="awardIcon" src="/python.png" alt="Python" />
             </motion.div>
 
             {/* Segunda fila: 3 iconos */}
             <motion.div className="awardList techRow" variants={awardVariants}>
+              <motion.img className="awardIcon" src="/html5.png" alt="HTML5" />
+              <motion.img className="awardIcon" src="/css3.png" alt="CSS3" />
               <motion.img className="awardIcon" src="/SQL_icon.png" alt="SQL" />
               <motion.img className="awardIcon" src="/git_original.png" alt="Git" />
-              <motion.img className="awardIcon" src="/react_original.png" alt="React" />
             </motion.div>
 
             {/* Plataformas */}
             <motion.p className="label" variants={awardVariants}>Plataformas donde me formé:</motion.p>
-            <motion.div className="awardList platformsRow" variants={awardVariants}>
-              <motion.img className="awardIcon" src="/udemy_logo.png" alt="Udemy" />
-              <motion.img className="awardIcon" src="/Keepcoding.svg" alt="KeepCoding" />
+            <motion.div className="awardList-platformsRow" variants={awardVariants}>
+              <motion.img className="awardIcon-platformIcon" src="/Keepcoding.svg" alt="KeepCoding" />
+              <motion.img className="awardIcon-platformIcon" src="/udemy_logo.png" alt="Udemy" />
+              <motion.img className="awardIcon-platformIcon" src="/FreeCodeCamp.png" alt="Udemy" />
             </motion.div>
           </motion.div>
 

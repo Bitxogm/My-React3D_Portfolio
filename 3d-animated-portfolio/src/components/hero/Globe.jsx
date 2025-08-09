@@ -1,6 +1,8 @@
-import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+
+import { useFrame, useThree } from '@react-three/fiber';
+import { useRef, Suspense } from 'react';
+import { Canvas,  useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
-import { Suspense, useRef } from 'react';
 import { OrbitControls } from '@react-three/drei';
 import MatrixRain from './MatrixRain';
 
@@ -33,15 +35,15 @@ const Globe = () => {
         position: 'absolute',
         inset: 0,
         zIndex: -2, // 🔽 más abajo que contenido
-        pointerEvents: 'none' // ⛔ sólo sobre canvas, no bloquea otros clics
+        pointerEvents: 'none' 
       }}
     >
       <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
         <hemisphereLight skyColor={'#ffffff'} groundColor={'#222222'} intensity={1} />
         <directionalLight position={[5, 3, 5]} intensity={0.8} />
         <Suspense fallback={null}>
-          <MatrixRain /> {/* 💾 fondo Matrix */}
-          <EarthMesh />   {/* 🌍 globo 3D */}
+          <MatrixRain   /> 
+          <EarthMesh />  
           <OrbitControls
             enableZoom={false}
             enablePan={false}
