@@ -1,6 +1,6 @@
 .services {
-
-  height: 100%;
+  min-height: 80dvh;
+  /* height: 100vh; */
   overflow: hidden;
   display: flex;
 }
@@ -31,7 +31,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
   cursor: pointer;
 }
 
@@ -42,7 +41,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .serviceIcon img {
@@ -54,8 +52,8 @@
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-
 }
+
 .service h3 {
 
   font-size: 1rem;
@@ -65,9 +63,156 @@
 .service:nth-child(1) .serviceIcon {
   background-color: chartreuse;
 }
+
 .service:nth-child(2) .serviceIcon {
   background-color: rgb(207, 207, 19);
 }
+
 .service:nth-child(3) .serviceIcon {
   background-color: rgb(55, 6, 230);
 }
+
+.counterList {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.counter h1 {
+  font-size: 2.5rem;
+  color: #dd4c63;
+}
+
+.counter p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1536px) {
+  .service,
+  .counterList {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .sTitle {
+    font-size: 5rem;
+  }
+
+  .service {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sTitle {
+    font-size: 3rem;
+  }
+  
+  .service h2 {
+    font-size: 1rem;
+  }
+
+  .service,
+  .counterList {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sSection {
+    width: 100%;
+  }
+
+  .sSection.right {
+    display: none;
+  }
+
+  .counterContent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+}
+
+@media (max-width: 430px) {
+  .sTitle {
+    font-size: 3rem;
+  }
+  
+  .services h2 {
+    font-size: 1.5rem;
+  }
+   .counterContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+}
+
+@media (max-width: 348px) {
+  .sTitle {
+    font-size: 3rem;
+  }
+
+  .serviceList h2 {
+    font-size: 1rem;
+  }
+
+  .counterList {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 260px) {
+    .counterList {
+      flex-direction: row;
+    }
+
+    .counter h1 {
+      font-size: 2rem;
+    }
+  }
+
+}
+
+
+ /* @media (max-height: 1440px) {
+  .services {
+    height: 70vh;
+    background-color: rgb(158, 117, 124) !important;
+  } 
+} */
+  
+
+
+
+
+  
+
+
+
+ 
+ 
+ 
+  
+
+  
+
+ 

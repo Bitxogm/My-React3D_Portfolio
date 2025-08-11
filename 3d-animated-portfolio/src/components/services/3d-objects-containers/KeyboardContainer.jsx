@@ -7,12 +7,12 @@ const KeyboardContainer = () => {
   return (
     <Canvas>
       <Suspense fallback="loading..."></Suspense>
-      <Stage environment="night" intensity={8} >
+      <Stage environment="night" intensity={3} >
       <Keyboard />
       </Stage>
 
       <OrbitControls enableZoom= {false} autoRotate/>
-      <PerspectiveCamera position={[1,0,1.8]} zoom={0.7} makeDefault />
+      <PerspectiveCamera position={[1,0,1.8]} zoom={1} makeDefault />
     </Canvas>
   
   )
