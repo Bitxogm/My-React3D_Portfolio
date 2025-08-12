@@ -2,7 +2,6 @@ import Hero from './components/hero/Hero';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
-import LayoutDebug from './components/services/LayoutDebug';
 // import Test from '../src/components/Test.jsx';
 // import Test3d  from "./components/Test3d"
 
@@ -16,12 +15,11 @@ const App = () => {
 
       <section id="#services">
         <Services />
-        {/* <LayoutDebug /> */}
       </section>
 
-      <section id="#portfolio">
+      {/* <section id="#portfolio"> */}
         <Portfolio />
-      </section>
+      {/* </section> */}
 
       <section id="#contact">
         <Contact />

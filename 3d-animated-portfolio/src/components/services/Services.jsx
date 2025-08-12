@@ -52,26 +52,50 @@ const serviceVariants = {
 }
 
 
+// const services = [
+//   {
+//     id: 1,
+//     img: "/service1.png",
+//     title: "Web Development",
+//     counter: 35,
+//   },
+
+//   {
+//     id: 2,
+//     img: "/service2.png",
+//     title: "Product Design",
+//     counter: 13,
+//   },
+
+//   {
+//     id: 3,
+//     img: "/service3.png",
+//     title: "Branding",
+//     counter: 15,
+//   },
+// ];
+
 const services = [
   {
     id: 1,
-    img: "/service1.png",
-    title: "Web Development",
-    counter: 35,
+    img: "/laptop.png", // Laptop = desarrollo web
+    title: "Desarrollo Full Stack",
+    desc: "Aplicaciones web con React, Node.js y MongoDB. Enfocado en buenas prácticas, diseño limpio y funcionalidad real.",
+    counter: 4,
   },
-
   {
     id: 2,
-    img: "/service2.png",
-    title: "Product Design",
-    counter: 13,
+    img: "/pcgaming.png", // PC gaming = herramientas con IA
+    title: "Herramientas con IA",
+    desc: "Agentes inteligentes que refactorizan código, generan tests y traducen entre lenguajes. Automatización al servicio del desarrollador.",
+    counter: 2,
   },
-
   {
     id: 3,
-    img: "/service3.png",
-    title: "Branding",
-    counter: 15,
+    img: "/keyboard.png", // Keyboard = testing y automatización
+    title: "Automatización y Testing",
+    desc: "Scripts para tareas repetitivas, generación de pruebas unitarias y análisis de seguridad. Código más robusto, menos trabajo manual.",
+    counter: 3,
   },
 ];
 
@@ -90,7 +114,7 @@ const Services = () => {
           variants={textVariants}
           animate={isInView ? "animate" : "initial"}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="sTitle">Como puedo  ayudar?
+          className="sTitle">¿Qué se hacer?
         </motion.h1>
         <motion.div
           variants={listVariants}
@@ -99,9 +123,9 @@ const Services = () => {
           className="serviceList">
           {services.map((service) => (
             <div className="service"
-             key={service.id}
-             onClick={() =>setCurrentServiceId(service.id)}
-             >
+              key={service.id}
+              onClick={() => setCurrentServiceId(service.id)}
+            >
               <div className="serviceIcon">
                 <img src={service.img} alt="" ></img>
               </div>
@@ -113,19 +137,29 @@ const Services = () => {
           ))}
 
           <div className="counterList">
-            <Counter from={0} to={104} text="Project completed" />
-            <Counter from={0} to={72} text="Happy Clients" />
+            <Counter from={0} to={9} text="Proyectos personales" />
+            <Counter from={0} to={3} text="Herramientas con IA" />
+            <Counter from={0} to={19} text="Repos públicos en GitHub" />
+          </div>
+          <div className="serviceDesc">
+            <motion.p
+              variants={serviceVariants}
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              {services.find(s => s.id === currentServiceId)?.desc}
+            </motion.p>
           </div>
         </motion.div>
       </div>
 
       <div className="sSection right">
-          {currentServiceId === 1 ? (<ComputerModelContainer />
-          ) : currentServiceId === 2 ? ( 
-            <GamingPcContainer />) : (
-              <KeyboardContainer />
-            )}
-      
+        {currentServiceId === 1 ? (<ComputerModelContainer />
+        ) : currentServiceId === 2 ? (
+          <GamingPcContainer />) : (
+          <KeyboardContainer />
+        )}
+
 
       </div>
     </div>
