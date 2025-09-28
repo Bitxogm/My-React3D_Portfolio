@@ -39,7 +39,7 @@ Thumbs.db
 
 #Ejecutables
 scripts/
-**/*.sh
+.sh
 
 #Firebase
 firebase-config.js
