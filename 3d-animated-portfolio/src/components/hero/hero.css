@@ -160,8 +160,7 @@ body::after {
 .awardList-platformsRow {
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 2rem;
 }
@@ -193,7 +192,7 @@ body::after {
   margin-top: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   padding: 20px;
@@ -220,8 +219,6 @@ body::after {
 
 
 .followText {
-  display: flex;
-  align-items: center;
   background-color: #dd4c62;
   font-size: 12px;
   width: max-content;
@@ -426,7 +423,7 @@ body::after {
   }
 
   .hTitle {
-    font-size: 88px;
+    font-size: 65px;
   }
 
   .hImg {

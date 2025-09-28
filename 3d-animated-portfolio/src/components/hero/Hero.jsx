@@ -138,7 +138,6 @@ const Hero = () => {
             <motion.div className="awardList-platformsRow" variants={awardVariants}>
               <motion.img className="awardIcon-platformIcon" src="/Keepcoding.svg" alt="KeepCoding" />
               <motion.img className="awardIcon-platformIcon" src="/udemy_logo.png" alt="Udemy" />
-              <motion.img className="awardIcon-platformIcon" src="/FreeCodeCamp.png" alt="Udemy" />
             </motion.div>
           </motion.div>
 
@@ -156,9 +155,7 @@ const Hero = () => {
             <motion.a href="https://github.com/Bitxogm" target="_blank">
               <img src="/icons8-github-100.png"></img>
             </motion.a>
-            <motion.a variants={followVariants} initial="initial" animate="animate" href="https://app.netlify.com/teams/otaku-1944/projects" target="_blank">
-              <img src="/icons8-netlify-72.png"></img>
-            </motion.a>
+          
             <motion.a variants={followVariants} initial="initial" animate="animate" href="https://www.linkedin.com/in/victor-manuel-gonzalez-/" target="_blank">
               <img src="/icons8-linkedin-100.png"></img>
             </motion.a>

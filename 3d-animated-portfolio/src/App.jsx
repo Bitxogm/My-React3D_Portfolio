@@ -2,8 +2,6 @@ import Hero from './components/hero/Hero';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
-// import Test from '../src/components/Test.jsx';
-// import Test3d  from "./components/Test3d"
 
 const App = () => {
   return (
@@ -18,15 +16,14 @@ const App = () => {
       </section>
 
       {/* <section id="#portfolio"> */}
-        <Portfolio />
+      <Portfolio />
       {/* </section> */}
 
       <section id="#contact">
         <Contact />
       </section>
     </div>
-    // <Test3d />
-);
+  );
 }
 export default App;
 
@@ -35,4 +32,4 @@ export default App;
 
 
 
-    
+
