@@ -156,7 +156,7 @@ const Hero = () => {
               <img src="/icons8-github-100.png"></img>
             </motion.a>
           
-            <motion.a variants={followVariants} initial="initial" animate="animate" href="https://www.linkedin.com/in/victor-manuel-gonzalez-/" target="_blank">
+            <motion.a variants={followVariants} initial="initial" animate="animate" href="https://www.linkedin.com/in/victor-manuel-gonzalez-moreno/" target="_blank">
               <img src="/icons8-linkedin-100.png"></img>
             </motion.a>
             <motion.div className="followTextContainer">
