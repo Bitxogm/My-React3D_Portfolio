@@ -7,22 +7,22 @@ const items = [
     id: 1,
     img: "/AI_Code1.png",
     title: "CodeCraft AI: Refactor, Test & Translate",
-    desc: "Tu copiloto de desarrollo: sube tu código, deja que la IA lo analice, lo mejore y lo traduzca. Ideal para proyectos multilenguaje y equipos que buscan automatizar tareas repetitivas.",
-    link: "https://agente-refactorizacion-v-01.web.app/",
+    desc: "Aplicación Fullstack (React/Vite) construida con Tailwind CSS y Shadcn/ui, que integra la API de Google Gemini (LLM) en el backend. Ofrece funcionalidades avanzadas como Refactorización inteligente, Análisis de Seguridad, Generación de Tests Unitarios, Modularización y Documentación automática. Incluye un Chatbot contextual. Es el copiloto definitivo para la automatización de tareas repetitivas y la mejora continua de la calidad del código.",
+    link: "https://new-code-ai-assistant.vercel.app/",
   },
   {
     id: 2,
-    img: "/p2.jpg",
-    title: "School Management System",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/landig-review.png",
+    title: "Plataforma de Reseñas de Videojuegos",
+    desc: "Proyecto Front-end (HTML5/CSS3/JS) que simula una plataforma de reseñas de videojuegos. Enfocado en la maquetación y diseño responsive desde cero, asegurando una visualización perfecta en cualquier dispositivo móvil o de escritorio.",
+    link: "https://landig-review-videogames.netlify.app/",
   },
   {
     id: 3,
-    img: "/p3.jpg",
-    title: "Real-time Chat Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/web-CSS3.png",
+    title: "WebDesign CSS3:Landing Page Moderna",
+    desc: "Página de aterrizaje (Landing Page) diseñada con foco en la experiencia de usuario y animaciones fluidas utilizando exclusivamente HTML5 y CSS3. Un proyecto para demostrar habilidad en responsive design y optimización de rendimiento",
+    link: "https://designwebcss3.netlify.app/",
   },
   {
     id: 4,
@@ -75,7 +75,7 @@ const textVariants = {
   },
 };
 
-const ListItem = ({ item }) => {
+const ListItem = ({ item  }) => {
   const ref = useRef();
 
   const isInView = useInView(ref, { margin: "-100px" });
