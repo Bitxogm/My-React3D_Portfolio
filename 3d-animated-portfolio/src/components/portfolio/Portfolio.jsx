@@ -3,34 +3,37 @@ import "./portfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 
 const items = [
+
   {
     id: 1,
-    img: "/AI_Code1.png",
+    img: "/logic-academy-portfolio-hero.png",
+    title: "Social Media Project",
+      desc: "Plataforma Fullstack de aprendizaje de programación (React 18 + TypeScript / Node.js + Express) construida con Tailwind CSS y Shadcn/ui, integrada con MongoDB Atlas. Incorpora Gemini 2.0 Flash como tutor personal de IA que genera explicaciones, diagramas de flujo, tests y hints contextuales. Incluye Monaco Editor (VS Code en el navegador), ejecución real de código Python/JavaScript, sistema de gamificación completo (XP, niveles, achievements, streaks), analytics visuales con heatmap estilo GitHub, 30+ ejercicios en 6 categorías, y 25+ plantillas de código listas para usar. Dashboard interactivo con seguimiento de progreso en tiempo real.",
+    link: "https://new-logic-agent-git-dev-bitxejos-projects.vercel.app/",
+  },
+
+  {
+    id: 2,
+    img: "/codecraft-ai-portfolio-hero.png",
     title: "CodeCraft AI: Refactor, Test & Translate",
     desc: "Aplicación Fullstack (React/Vite) construida con Tailwind CSS y Shadcn/ui, que integra la API de Google Gemini (LLM) en el backend. Ofrece funcionalidades avanzadas como Refactorización inteligente, Análisis de Seguridad, Generación de Tests Unitarios, Modularización y Documentación automática. Incluye un Chatbot contextual. Es el copiloto definitivo para la automatización de tareas repetitivas y la mejora continua de la calidad del código.",
     link: "https://new-code-ai-assistant.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     img: "/landig-review.png",
     title: "Plataforma de Reseñas de Videojuegos",
     desc: "Proyecto Front-end (HTML5/CSS3/JS) que simula una plataforma de reseñas de videojuegos. Enfocado en la maquetación y diseño responsive desde cero, asegurando una visualización perfecta en cualquier dispositivo móvil o de escritorio.",
     link: "https://landig-review-videogames.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     img: "/web-CSS3.png",
     title: "WebDesign CSS3:Landing Page Moderna",
     desc: "Página de aterrizaje (Landing Page) diseñada con foco en la experiencia de usuario y animaciones fluidas utilizando exclusivamente HTML5 y CSS3. Un proyecto para demostrar habilidad en responsive design y optimización de rendimiento",
     link: "https://designwebcss3.netlify.app/",
   },
-  {
-    id: 4,
-    img: "/p4.jpg",
-    title: "Social Media Project",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
-  },
+
   {
     id: 5,
     img: "/p5.jpg",
@@ -75,7 +78,7 @@ const textVariants = {
   },
 };
 
-const ListItem = ({ item  }) => {
+const ListItem = ({ item }) => {
   const ref = useRef();
 
   const isInView = useInView(ref, { margin: "-100px" });
