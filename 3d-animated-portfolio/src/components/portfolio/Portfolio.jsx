@@ -21,25 +21,25 @@ const items = [
   },
   {
     id: 3,
-    img: "/landig-review.png",
+    img: "/videogames-review.png",
     title: "Plataforma de Reseñas de Videojuegos",
     desc: "Proyecto Front-end (HTML5/CSS3/JS) que simula una plataforma de reseñas de videojuegos. Enfocado en la maquetación y diseño responsive desde cero, asegurando una visualización perfecta en cualquier dispositivo móvil o de escritorio.",
     link: "https://landig-review-videogames.netlify.app/",
   },
   {
     id: 4,
-    img: "/web-CSS3.png",
+    img: "/diseno-web-css3.png",
     title: "WebDesign CSS3:Landing Page Moderna",
-    desc: "Página de aterrizaje (Landing Page) diseñada con foco en la experiencia de usuario y animaciones fluidas utilizando exclusivamente HTML5 y CSS3. Un proyecto para demostrar habilidad en responsive design y optimización de rendimiento",
+    desc: "Landing Page diseñada con foco en la experiencia de usuario y animaciones fluidas utilizando exclusivamente HTML5 y CSS3. Un proyecto para demostrar habilidad en responsive design y optimización de rendimiento",
     link: "https://designwebcss3.netlify.app/",
   },
 
   {
     id: 5,
-    img: "/p5.jpg",
-    title: "Animated Portfolio Website",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/cv-generator.png",
+    title: "CV Generator Powered By AI",
+    desc: "Aplicación web que genera CVs profesionales en PDF con tres estilos (Visual, Moderno, Clásico) optimizados para sistemas ATS. Incluye IA integrada que analiza ofertas de trabajo, compara con tu perfil y sugiere mejoras personalizadas, además de generar cartas de presentación adaptadas.",
+    link: "https://github.com/Bitxogm/CV-Generator-V2",
   },
 ];
 

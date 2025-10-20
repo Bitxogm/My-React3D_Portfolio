@@ -78,21 +78,21 @@ const serviceVariants = {
 const services = [
   {
     id: 1,
-    img: "/laptop.png", // Laptop = desarrollo web
+    img: "/service1.png", // Laptop = desarrollo web
     title: "Desarrollo Full Stack",
     desc: "Aplicaciones web con React, Node.js y MongoDB. Enfocado en buenas prácticas, diseño limpio y funcionalidad real.",
     counter: 4,
   },
   {
     id: 2,
-    img: "/pcgaming.png", // PC gaming = herramientas con IA
+    img: "/service2.png", // PC gaming = herramientas con IA
     title: "Herramientas con IA",
     desc: "Agentes inteligentes que refactorizan código, generan tests y traducen entre lenguajes. Automatización al servicio del desarrollador.",
     counter: 2,
   },
   {
     id: 3,
-    img: "/keyboard.png", // Keyboard = testing y automatización
+    img: "/service3.png", // Keyboard = testing y automatización
     title: "Automatización y Testing",
     desc: "Scripts para tareas repetitivas, generación de pruebas unitarias y análisis de seguridad. Código más robusto, menos trabajo manual.",
     counter: 3,
