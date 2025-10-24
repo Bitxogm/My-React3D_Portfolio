@@ -5,22 +5,6 @@ body {
   margin: 0;
 }
 
-body::after {
-  content: "Viewport: " attr(data-vw) "x" attr(data-vh);
-  position: fixed;
-  bottom: 8px;
-  right: 8px;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  padding: 4px 8px;
-  font-size: 12px;
-  pointer-events: none;
-}
-
-/* * {
-  outline: 2px dashed green;
-}
- */
 
 
 .hero {
@@ -538,30 +522,6 @@ body::after {
 
 
 
-@media(max-width:853px) {
-
-  .certificate {
-  flex-direction: column;
-  
-}
-
-.follow {
-  width: 300px;
-  gap: 20px;
-}
-
-.follow img {
-  width: 40px;
-  height: 40px;
-}
- 
-
-
-
-
-
-
-}
 
 
 
@@ -576,6 +536,19 @@ body::after {
 
 
 @media(max-width:768px) {
+  .certificate {
+    flex-direction: column;
+  }
+
+  .follow {
+    width: 300px;
+    gap: 20px;
+  }
+
+  .follow img {
+    width: 40px;
+    height: 40px;
+  }
 
   .hero {
     flex-direction: row;
@@ -583,7 +556,6 @@ body::after {
 
   .bg {
     width: 100%;
-
   }
 
   .hSection {

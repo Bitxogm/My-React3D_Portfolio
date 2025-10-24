@@ -82,9 +82,16 @@ const services = [
 const Services = () => {
   const [currentServiceId, setCurrentServiceId] = useState(1);
 
-
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-200px" });
+
+  const handlePrevious = () => {
+    setCurrentServiceId(prev => prev === 1 ? 3 : prev - 1);
+  };
+
+  const handleNext = () => {
+    setCurrentServiceId(prev => prev === 3 ? 1 : prev + 1);
+  };
 
   return (
     <div className='services' ref={ref} >
@@ -133,13 +140,38 @@ const Services = () => {
       </div>
 
       <div className="sSection right">
+        <div className="carouselControls">
+          <button
+            className="carouselButton prev"
+            onClick={handlePrevious}
+            aria-label="Previous service"
+          >
+            ‹
+          </button>
+          <button
+            className="carouselButton next"
+            onClick={handleNext}
+            aria-label="Next service"
+          >
+            ›
+          </button>
+        </div>
+
         {currentServiceId === 1 ? (<ComputerModelContainer />
         ) : currentServiceId === 2 ? (
           <GamingPcContainer />) : (
           <KeyboardContainer />
         )}
 
-
+        <div className="carouselIndicators">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className={`carouselDot ${currentServiceId === service.id ? 'active' : ''}`}
+              onClick={() => setCurrentServiceId(service.id)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
