@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "incognito-dev": "vite --open & sleep 2 && google-chrome --incognito http://localhost:5173",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

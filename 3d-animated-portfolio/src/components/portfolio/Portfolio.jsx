@@ -7,7 +7,7 @@ const items = [
   {
     id: 1,
     img: "/logic-academy-portfolio-hero.png",
-    title: "Social Media Project",
+    title: "Logic Academy",
       desc: "Plataforma Fullstack de aprendizaje de programación (React 18 + TypeScript / Node.js + Express) construida con Tailwind CSS y Shadcn/ui, integrada con MongoDB Atlas. Incorpora Gemini 2.0 Flash como tutor personal de IA que genera explicaciones, diagramas de flujo, tests y hints contextuales. Incluye Monaco Editor (VS Code en el navegador), ejecución real de código Python/JavaScript, sistema de gamificación completo (XP, niveles, achievements, streaks), analytics visuales con heatmap estilo GitHub, 30+ ejercicios en 6 categorías, y 25+ plantillas de código listas para usar. Dashboard interactivo con seguimiento de progreso en tiempo real.",
     link: "https://new-logic-agent-git-dev-bitxejos-projects.vercel.app/",
   },
