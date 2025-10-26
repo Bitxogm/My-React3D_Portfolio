@@ -7,9 +7,6 @@
   transform-origin: bottom left;
 }
 
-
-
-
 @keyframes popIn {
   0% {
     opacity: 0;
@@ -30,13 +27,20 @@
   }
 }
 
-
-
-
 .bubblePath {
   fill: #ffffffee;
   stroke: black;
   stroke-width: 4;
 }
 
+@media(max-width:768px) {
+  .bubble {
+    width: 220px;  /* Reducido de 300px */
+    height: 150px;  /* Reducido de 200px */
+  }
+  
+  .bubblePath {
+    stroke-width: 3;  /* Reducido de 4 */
+  }
+}
 

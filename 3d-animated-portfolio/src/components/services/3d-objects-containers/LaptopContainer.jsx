@@ -5,15 +5,26 @@ import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei"
 
 const ComputerModelContainer = () => {
   return (
-    <Canvas>
+    // <Canvas>
+    //   <Suspense fallback="loading..."></Suspense>
+    //   {/* <Stage environment="night" > */}
+    //   <ComputerModel />
+    //   {/* </Stage> */}
+
+    //   <OrbitControls enableZoom= {false} autoRotate/>
+    //   <PerspectiveCamera position={[-1,0,1.8]} zoom={0.7} makeDefault />
+    // </Canvas>
+     <Canvas>
       <Suspense fallback="loading..."></Suspense>
-      <Stage environment="night" >
-      <ComputerModel />
+      <Stage environment={null} preset="soft" intensity={1.2}>
+        <ComputerModel />
       </Stage>
 
-      <OrbitControls enableZoom= {false} autoRotate/>
+      <OrbitControls enableZoom={false} autoRotate/>
       <PerspectiveCamera position={[-1,0,1.8]} zoom={0.7} makeDefault />
     </Canvas>
+
+
   
   )
 }

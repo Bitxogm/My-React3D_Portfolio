@@ -5,13 +5,23 @@ import { GamingPc } from "../3d-react-objects/GamingPc"
 
 const GamingPcContainer= () => {
   return (
-    <Canvas>
+    // <Canvas>
+    //   <Suspense fallback="loading..."></Suspense>
+    //   {/* <Stage environment="night" intensity={10}> */}
+    //   <Stage  intensity={10}>
+    //   <GamingPc />
+    //   </Stage>
+
+    //   <OrbitControls enableZoom= {false} autoRotate/>
+    //   <PerspectiveCamera position={[-1,0,1.8]} zoom={0.7} makeDefault />
+    // </Canvas>
+        <Canvas>
       <Suspense fallback="loading..."></Suspense>
-      <Stage environment="night" intensity={10}>
-      <GamingPc />
+      <Stage environment={null} preset="upfront" intensity={1.5}>
+        <GamingPc />
       </Stage>
 
-      <OrbitControls enableZoom= {false} autoRotate/>
+      <OrbitControls enableZoom={false} autoRotate/>
       <PerspectiveCamera position={[-1,0,1.8]} zoom={0.7} makeDefault />
     </Canvas>
   
