@@ -17,7 +17,7 @@ export default [
         sourceType: "module",
       },
     },
-    settings: { react: { version: "18.3" } },
+    settings: { react: { version: "19.1" } },
     plugins: {
       react,
       "react-hooks": reactHooks,
@@ -31,6 +31,8 @@ export default [
       "no-unused-vars": "warn",
       "react/prop-types": "off",
       "react/jsx-no-target-blank": "off",
+      "react/no-unknown-property": ["error", { "ignore": ["args", "map", "emissive", "emissiveIntensity", "position", "intensity", "skyColor", "groundColor"] }],
+      "react/no-unescaped-entities": "warn",
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
