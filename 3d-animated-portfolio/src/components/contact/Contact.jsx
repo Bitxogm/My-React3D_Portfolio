@@ -44,7 +44,9 @@ const Contact = () => {
           setError(false);
         },
         (error) => {
-          console.log(error);
+          if (import.meta.env.DEV) {
+            console.error('EmailJS Error:', error);
+          }
           setError(true);
           setSuccess(false);
         }

@@ -5,16 +5,25 @@ import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei"
 
 const KeyboardContainer = () => {
   return (
+    // <Canvas>
+    //   <Suspense fallback="loading..."></Suspense>
+    //   {/* <Stage environment="night" intensity={3} > */}
+    //   <Stage  intensity={3} >
+    //   <Keyboard />
+    //   </Stage>
+
+    //   <OrbitControls enableZoom= {false} autoRotate/>
+    //   <PerspectiveCamera position={[1,0,1.8]} zoom={1} makeDefault />
+    // </Canvas>
     <Canvas>
       <Suspense fallback="loading..."></Suspense>
-      <Stage environment="night" intensity={3} >
-      <Keyboard />
+      <Stage environment={null} preset="rembrandt" intensity={1.3}>
+        <Keyboard />
       </Stage>
 
-      <OrbitControls enableZoom= {false} autoRotate/>
-      <PerspectiveCamera position={[1,0,1.8]} zoom={1} makeDefault />
+      <OrbitControls enableZoom={false} autoRotate />
+      <PerspectiveCamera position={[-1, 0, 1.8]} zoom={0.7} makeDefault />
     </Canvas>
-  
   )
 }
 export default KeyboardContainer;

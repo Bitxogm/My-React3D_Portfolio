@@ -2,7 +2,7 @@ import ComputerModelContainer from "./3d-objects-containers/LaptopContainer";
 import GamingPcContainer from "./3d-objects-containers/GamingPcContainer";
 import "./services.css";
 import KeyboardContainer from "./3d-objects-containers/KeyboardContainer";
-import Counter from "./counter";
+import Counter from "./Counter";
 import { motion, useInView } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
