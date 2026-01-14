@@ -11,17 +11,25 @@ const App = () => {
         <Hero />
       </section>
 
-      {/* <section id="#services">
+      <section id="#services">
         <Services />
-      </section> */}
+      </section>
 
+      {/* 
+        IMPORTANTE: Portfolio NO debe estar dentro de <section> 
+        Razón: Portfolio usa scroll horizontal especial (scrollYProgress)
+        que necesita ~5 clicks de rueda para mostrar los 5 proyectos.
+        Si lo envuelves en <section>, el scroll-snap-align interfiere
+        y las secciones se montan/superponen incorrectamente.
+        ¡NO DESCOMENTAR las etiquetas <section> de abajo!
+      */}
       {/* <section id="#portfolio"> */}
-      {/* <Portfolio /> */}
+        <Portfolio />
       {/* </section> */}
 
-      {/* <section id="#contact">
+      <section id="#contact">
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 }
