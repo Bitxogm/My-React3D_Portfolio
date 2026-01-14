@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import ComicBubble from '../ui/ComicBuble';
+import ComicBubble from '../ui/ComicBubble';
 import styles from './Speech.module.css';
 
 const Speech = () => {
