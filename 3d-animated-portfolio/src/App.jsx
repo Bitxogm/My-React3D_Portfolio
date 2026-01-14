@@ -11,17 +11,17 @@ const App = () => {
         <Hero />
       </section>
 
-      {/* <section id="#services">
+      <section id="#services">
         <Services />
-      </section> */}
+      </section>
 
-      {/* <section id="#portfolio"> */}
-      {/* <Portfolio /> */}
-      {/* </section> */}
+      <section id="#portfolio">
+        <Portfolio />
+      </section>
 
-      {/* <section id="#contact">
+      <section id="#contact">
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 }
