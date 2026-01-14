@@ -21,17 +21,17 @@ const items = [
   },
   {
     id: 3,
-    img: "/videogames-review.png",
-    title: "Plataforma de Reseñas de Videojuegos",
-    desc: "Proyecto Front-end (HTML5/CSS3/JS) que simula una plataforma de reseñas de videojuegos. Enfocado en la maquetación y diseño responsive desde cero, asegurando una visualización perfecta en cualquier dispositivo móvil o de escritorio.",
-    link: "https://landig-review-videogames.netlify.app/",
+    img: "/call-spam-blocker.png ",
+    title: "Call Spam AI Blocker - Android",
+    desc: "Aplicación nativa Android (React Native + Java) que detecta y bloquea llamadas spam automáticamente. Implementa múltiples estrategias: lista negra personalizable, whitelist de contactos, modo radical y la técnica Answer+Hangup (contesta y cuelga silenciosamente spam, reducción 80%). Sistema de detección con AccessibilityService, integración con PhoneLookup API, historial de llamadas bloqueadas y preparada para IA conversacional con Gemini.",
+    link: "https://github.com/Bitxogm/Call-Spam-IA-Bolcker",
   },
   {
     id: 4,
-    img: "/diseno-web-css3.png",
-    title: "WebDesign CSS3:Landing Page Moderna",
-    desc: "Landing Page diseñada con foco en la experiencia de usuario y animaciones fluidas utilizando exclusivamente HTML5 y CSS3. Un proyecto para demostrar habilidad en responsive design y optimización de rendimiento",
-    link: "https://designwebcss3.netlify.app/",
+    img: "/sms-guardian.png",
+    title: "SMSGuardian - Android",
+    desc: "Aplicación de seguridad Android (React Native + Java Native) que intercepta y bloquea SMS spam y phishing automáticamente. Motor de análisis híbrido en 3 fases: Whitelist local (validación de dominios bancarios oficiales sin salir del dispositivo), Heurística avanzada offline (detección de vishing, patrones de urgencia, acortadores sospechosos) y Verificación Cloud con VirusTotal + Google Safe Browsing. Incluye cuarentena inteligente, sincronización automática con contactos, SQLite local para privacidad total, y detección de URLs maliciosas en tiempo real. Compatible con F-Droid y stores éticas.",
+    link: "https://github.com/Bitxogm/SMSGuardian",
   },
 
   {
